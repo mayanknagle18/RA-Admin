@@ -1,0 +1,46 @@
+/* button style */
+
+.ra_btn{
+    border-radius: 10px;
+    padding: 7px 25px;
+    font-size: 15px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.ra_btn:focus{
+    outline: none;
+}
+
+.ra_btn:focus-visible{
+    box-shadow: none;
+}
+
+.ra_primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.ra_primary:hover{
+    background-color: var(--primary-color-10);
+    color: var(--white-color);
+}
+
+.ra_primary_light{
+    background-color: var(--primary-light-color);
+    color: var(--primary-color);
+}
+
+.ra_primary_light:hover{
+    border: 1px solid var(--primary-color);
+}
+
+.ra_success_light{
+    background-color: var(--success-light-color);
+    color: var(--success-color);
+}
+
+.ra_success_light:hover{
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+}

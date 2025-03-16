@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RA-ADMIN</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/thumbnail/favicon.png">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- phosphor icons css -->
+    <link rel="stylesheet" href="./assets/css/phosphor-icons.min.css">
+    <!-- flag icon css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icon-css@4.1.7/css/flag-icons.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <!-- header start here -->
+    <header class="ra_header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header_main_wrap">
+                    <div class="header_toggle">
+                        <span class="toggle_wrap" id="toggleHeader">
+                            <i class="ph ph-circles-four"></i>
+                        </span>
+                    </div>
+                    <div class="header_items">
+                        <div class="header_wheather">
+                            <span class="wheather_report">
+                                <i class="ph-duotone  ph-cloud-sun text-primary"></i>
+                                <span class="wheather_temp">26 <sup>&deg;C</sup></span>
+                            </span>
+                        </div>
+                        <div class="header_language">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="flag-icon flag-icon-us"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="flag-icon flag-icon-us"></span>
+                                            <span class="flag-text">US</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="flag-icon flag-icon-fr"></span>
+                                            <span class="flag-text">France</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="flag-icon flag-icon-gb"></span>
+                                            <span class="flag-text">UK</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="flag-icon flag-icon-it"></span>
+                                            <span class="flag-text">Italy</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                              </div>
+                        </div>
+                        <div class="header_search">
+                            <span class="magnify_glass" id="seachBarToggle">
+                                <i class="ph ph-magnifying-glass"></i>
+                            </span>
+                            <div class="searchbar_wrap">
+                                <form action="" class="form_wrap">
+                                    <div class="search_input_wrap">
+                                        <span class="ph ph-magnifying-glass"></span>
+                                        <input type="search" class="ra_input form-control" placeholder="Search...">
+                                    </div>
+                                    <button type="submit" class="btn ra_btn ra_primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header_cart"> 
+                            <button class="btn btn-primary ra_header_canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#CartCanvas" aria-controls="CartCanvas">
+                                <div class="cart_num_wrap">
+                                    <span class="cart_wrap">
+                                        <i class="ph ph-shopping-cart-simple"></i>
+                                    </span>
+                                    <span class="no_of_item">
+                                        4
+                                    </span>
+                                </div>
+                            </button>
+                            <div class="offcanvas offcanvas-end ra_offcanvas" tabindex="-1" id="CartCanvas" aria-labelledby="CartCanvasLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="CartCanvasLabel">Cart</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body ra_scrollbar">
+                               <div class="cart_box_body">
+                                    <ul>
+                                        <li>
+                                            <div class="main_cart_box">
+                                                <div class="cart_item_img">
+                                                    <img src="./assets/images/thumbnail/bag_img.jpg" alt="bag img">
+                                                </div>
+                                                <div class="cart_item_wrap">
+                                                    <div class="cart_item_details">
+                                                        <h5>Backpacks</h5>
+                                                        <div class="cart_star_wrap">
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="item_color_size">
+                                                            <div class="cart_item_size">
+                                                                Size: <span class="cart_it_val">Medium</span>
+                                                            </div>
+                                                            <div class="cart_item_color">
+                                                                Color: <span class="cart_it_val">Violet</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart_item_price">
+                                                        <button class="cart_item_delete">
+                                                            <i class="fa-regular fa-trash-can trash_icon"></i>
+                                                        </button>
+                                                        <span class="item_price">$600 X 1</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="main_cart_box">
+                                                <div class="cart_item_img">
+                                                    <img src="./assets/images/thumbnail/womens_watch_img.jpg" alt="womens watch img">
+                                                </div>
+                                                <div class="cart_item_wrap">
+                                                    <div class="cart_item_details">
+                                                        <h5>Women's Watch</h5>
+                                                        <div class="cart_star_wrap">
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="item_color_size">
+                                                            <div class="cart_item_size">
+                                                                Size: <span class="cart_it_val">Small</span>
+                                                            </div>
+                                                            <div class="cart_item_color">
+                                                                Color: <span class="cart_it_val">Rose Gold</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart_item_price">
+                                                        <button class="cart_item_delete">
+                                                            <i class="fa-regular fa-trash-can trash_icon"></i>
+                                                        </button>
+                                                        <span class="item_price">$520 X 1</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="main_cart_box">
+                                                <div class="cart_item_img">
+                                                    <img src="./assets/images/thumbnail/sandals_img.jpg" alt="sandals img">
+                                                </div>
+                                                <div class="cart_item_wrap">
+                                                    <div class="cart_item_details">
+                                                        <h5>Sandals</h5>
+                                                        <div class="cart_star_wrap">
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="item_color_size">
+                                                            <div class="cart_item_size">
+                                                                Size: <span class="cart_it_val">8</span>
+                                                            </div>
+                                                            <div class="cart_item_color">
+                                                                Color: <span class="cart_it_val">White</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart_item_price">
+                                                        <button class="cart_item_delete">
+                                                            <i class="fa-regular fa-trash-can trash_icon"></i>
+                                                        </button>
+                                                        <span class="item_price">$390 X 1</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="main_cart_box">
+                                                <div class="cart_item_img">
+                                                    <img src="./assets/images/thumbnail/jackets_img.jpg" alt="jackets img">
+                                                </div>
+                                                <div class="cart_item_wrap">
+                                                    <div class="cart_item_details">
+                                                        <h5>Jackets</h5>
+                                                        <div class="cart_star_wrap">
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="item_color_size">
+                                                            <div class="cart_item_size">
+                                                                Size: <span class="cart_it_val">M</span>
+                                                            </div>
+                                                            <div class="cart_item_color">
+                                                                Color: <span class="cart_it_val">Light Blue</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart_item_price">
+                                                        <button class="cart_item_delete">
+                                                            <i class="fa-regular fa-trash-can trash_icon"></i>
+                                                        </button>
+                                                        <span class="item_price">$300 X 1</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="main_cart_box">
+                                                <div class="cart_item_img">
+                                                    <img src="./assets/images/thumbnail/shoes_img.jpg" alt="shoes img">
+                                                </div>
+                                                <div class="cart_item_wrap">
+                                                    <div class="cart_item_details">
+                                                        <h5>Shoes</h5>
+                                                        <div class="cart_star_wrap">
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star star_active"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <div class="item_color_size">
+                                                            <div class="cart_item_size">
+                                                                Size: <span class="cart_it_val">7</span>
+                                                            </div>
+                                                            <div class="cart_item_color">
+                                                                Color: <span class="cart_it_val">White</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cart_item_price">
+                                                        <button class="cart_item_delete">
+                                                            <i class="fa-regular fa-trash-can trash_icon"></i>
+                                                        </button>
+                                                        <span class="item_price">$400 X 1</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                               </div>
+                               <div class="cart_footer_body">
+                                    <div class="cart_total">
+                                        <h6>Total</h6>
+                                        <h6>$2210</h6>
+                                    </div>
+                                    <div class="cart_btn_wrap">
+                                        <div class="view_cart_btn">
+                                            <a href="#" class="ra_btn ra_primary_light">
+                                                <i class="fa-solid fa-eye"></i>
+                                                View Cart
+                                            </a>
+                                            <a href="#" class="ra_btn ra_success_light">
+                                                Checkout
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                               </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="header_notification"> 
+                            <button class="btn btn-primary ra_header_canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#NotificationCanvas" aria-controls="NotificationCanvas">
+                                <span class="notification_wrap">
+                                    <i class="ph ph-bell"></i>
+                                </span>
+                            </button>
+                            <div class="offcanvas offcanvas-end ra_offcanvas" tabindex="-1" id="NotificationCanvas" aria-labelledby="NotificationCanvasLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="NotificationCanvasLabel">Notification</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="notification_headerbody">
+                                    <ul class="notification_headerlists">
+                                        <li>
+                                            <div class="notification_headerwrap">
+                                                <div class="notify_img_text_wrap">
+                                                    <div class="notify_head_img_wrap">
+                                                        <img src="./assets/images/thumbnail/notify_img1.jpg" alt="notify img 1">
+                                                        <span class="notify_dot"></span> 
+                                                    </div>
+                                                    <div class="notify_head_content_wrap">
+                                                        <h6>
+                                                            <a href="#" class="notify_headuser">
+                                                                Gene Hart
+                                                            </a>
+                                                            wants to edit Report.doc
+                                                        </h6>
+                                                        <span class="ra_badge ra_badge_secondary">
+                                                            sep 23
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_delete_wrap">
+                                                    <button class="cart_item_delete">
+                                                        <i class="fa-regular fa-trash-can trash_icon" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notification_headerwrap">
+                                                <div class="notify_img_text_wrap">
+                                                    <div class="notify_head_img_wrap">
+                                                        <img src="./assets/images/thumbnail/notify_img2.jpg" alt="notify img 2">
+                                                        <span class="notify_dot"></span> 
+                                                    </div>
+                                                    <div class="notify_head_content_wrap">
+                                                        <h6>
+                                                            <a href="#" class="notify_headuser">
+                                                                Simon Young
+                                                            </a>
+                                                            shared a file called Dropdown.pdf
+                                                        </h6>
+                                                        <span class="ra_badge ra_badge_secondary">
+                                                            30 min
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_delete_wrap">
+                                                    <button class="cart_item_delete">
+                                                        <i class="fa-regular fa-trash-can trash_icon" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notification_headerwrap">
+                                                <div class="notify_img_text_wrap">
+                                                    <div class="notify_head_img_wrap">
+                                                        <img src="./assets/images/thumbnail/notify_img3.jpg" alt="notify img 3">
+                                                        <span class="notify_dot"></span> 
+                                                    </div>
+                                                    <div class="notify_head_content_wrap">
+                                                        <h6>
+                                                            <a href="#" class="notify_headuser">
+                                                                Becky G. Hayes
+                                                            </a>
+                                                            has added a comment to Final_Report.pdf
+                                                        </h6>
+                                                        <span class="ra_badge ra_badge_secondary">
+                                                            45 min
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_delete_wrap">
+                                                    <button class="cart_item_delete">
+                                                        <i class="fa-regular fa-trash-can trash_icon" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notification_headerwrap">
+                                                <div class="notify_img_text_wrap">
+                                                    <div class="notify_head_img_wrap">
+                                                        <img src="./assets/images/thumbnail/notify_img4.jpg" alt="notify img 4">
+                                                        <span class="notify_dot"></span> 
+                                                    </div>
+                                                    <div class="notify_head_content_wrap">
+                                                        <h6>
+                                                            <a href="#" class="notify_headuser">
+                                                                Romaine Nadeau
+                                                            </a>
+                                                            invited you to join a meeting
+                                                        </h6>
+                                                        <span class="ra_badge ra_badge_secondary">
+                                                            1 hour ago
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_delete_wrap">
+                                                    <button class="cart_item_delete">
+                                                        <i class="fa-regular fa-trash-can trash_icon" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notification_headerwrap">
+                                                <div class="notify_img_text_wrap">
+                                                    <div class="notify_head_img_wrap">
+                                                        <img src="./assets/images/thumbnail/notify_img1.jpg" alt="notify img 1">
+                                                        <span class="notify_dot"></span> 
+                                                    </div>
+                                                    <div class="notify_head_content_wrap">
+                                                        <h6>
+                                                            <a href="#" class="notify_headuser">
+                                                                Gene Hart
+                                                            </a>
+                                                            wants to edit Report.doc
+                                                        </h6>
+                                                        <span class="ra_badge ra_badge_secondary">
+                                                            sep 23
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_delete_wrap">
+                                                    <button class="cart_item_delete">
+                                                        <i class="fa-regular fa-trash-can trash_icon" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notification_headerwrap">
+                                                <div class="notify_img_text_wrap">
+                                                    <div class="notify_head_img_wrap">
+                                                        <img src="./assets/images/thumbnail/notify_img2.jpg" alt="notify img 2">
+                                                        <span class="notify_dot"></span> 
+                                                    </div>
+                                                    <div class="notify_head_content_wrap">
+                                                        <h6>
+                                                            <a href="#" class="notify_headuser">
+                                                                Simon Young
+                                                            </a>
+                                                            shared a file called Dropdown.pdf
+                                                        </h6>
+                                                        <span class="ra_badge ra_badge_secondary">
+                                                            30 min
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_delete_wrap">
+                                                    <button class="cart_item_delete">
+                                                        <i class="fa-regular fa-trash-can trash_icon" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notification_headerwrap">
+                                                <div class="notify_img_text_wrap">
+                                                    <div class="notify_head_img_wrap">
+                                                        <img src="./assets/images/thumbnail/notify_img3.jpg" alt="notify img 3">
+                                                        <span class="notify_dot"></span> 
+                                                    </div>
+                                                    <div class="notify_head_content_wrap">
+                                                        <h6>
+                                                            <a href="#" class="notify_headuser">
+                                                                Becky G. Hayes
+                                                            </a>
+                                                            has added a comment to Final_Report.pdf
+                                                        </h6>
+                                                        <span class="ra_badge ra_badge_secondary">
+                                                            45 min
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_delete_wrap">
+                                                    <button class="cart_item_delete">
+                                                        <i class="fa-regular fa-trash-can trash_icon" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="notification_headerwrap">
+                                                <div class="notify_img_text_wrap">
+                                                    <div class="notify_head_img_wrap">
+                                                        <img src="./assets/images/thumbnail/notify_img4.jpg" alt="notify img 4">
+                                                        <span class="notify_dot"></span> 
+                                                    </div>
+                                                    <div class="notify_head_content_wrap">
+                                                        <h6>
+                                                            <a href="#" class="notify_headuser">
+                                                                Romaine Nadeau
+                                                            </a>
+                                                            invited you to join a meeting
+                                                        </h6>
+                                                        <span class="ra_badge ra_badge_secondary">
+                                                            1 hour ago
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="notification_delete_wrap">
+                                                    <button class="cart_item_delete">
+                                                        <i class="fa-regular fa-trash-can trash_icon" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="header_profile">
+                            <button class="btn btn-primary ra_header_canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#ProfileCanvas" aria-controls="ProfileCanvas">
+                                <div class="profile_img_wrap">
+                                    <img src="./assets/images/thumbnail/header_profile.jpg" alt="profile img">
+                                </div>
+                            </button>
+                            <div class="offcanvas offcanvas-end ra_offcanvas ra_offcanvas_profile" tabindex="-1" id="ProfileCanvas" aria-labelledby="ProfileCanvasLabel">
+                            <div class="offcanvas-body">
+                                <div class="profile_header_main_wrap">
+                                    <div class="profile_main_details">
+                                        <div class="profile_head_img">
+                                            <img src="./assets/images/thumbnail/header_profile.jpg" alt="header profile">
+                                        </div>
+                                        <h5>Laura Monaldo</h5>
+                                        <h6>lauradesign@gmail.com</h6>
+                                    </div>
+                                </div>
+                                <div class="profile_header_lists">
+                                    <ul>
+                                        <li>
+                                            <div class="profile_listimg_wrap">
+                                                <div class="profile_listimg">
+                                                    <i class="ph ph-user-circle"></i>
+                                                    <a href="#" class="profileimgtext">Profile Details</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile_listimg_wrap">
+                                                <div class="profile_listimg">
+                                                    <i class="ph ph-gear"></i>
+                                                    <a href="#" class="profileimgtext">Settings</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile_listimg_wrap">
+                                                <div class="profile_listimg">
+                                                    <i class="ph ph-eye-slash"></i>
+                                                    <a href="#" class="profileimgtext">Hide Settings</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile_listimg_wrap">
+                                                <div class="profile_listimg">
+                                                    <i class="ph ph-notification"></i>
+                                                    <a href="#" class="profileimgtext">Notification</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile_listimg_wrap">
+                                                <div class="profile_listimg">
+                                                    <i class="ph ph-detective"></i>
+                                                    <a href="#" class="profileimgtext">Incognito</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="profile_header_lists">
+                                    <ul>
+                                        <li>
+                                            <div class="profile_listimg_wrap">
+                                                <div class="profile_listimg">
+                                                    <i class="ph ph-question"></i>
+                                                    <a href="#" class="profileimgtext">Help</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile_listimg_wrap">
+                                                <div class="profile_listimg">
+                                                    <i class="ph ph-currency-circle-dollar"></i>
+                                                    <a href="#" class="profileimgtext">Pricing</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="profile_listimg_wrap">
+                                                <div class="profile_listimg">
+                                                    <i class="ph ph-plus"></i>
+                                                    <a href="#" class="profileimgtext">Add Account</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="profile_header_logout">
+                                    <div class="profile_listimg_wrap">
+                                        <div class="profile_listimg">
+                                            <i class="ph ph-sign-out"></i>
+                                            <a href="#" class="listlogouttext">Log Out</a>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end here -->
+    
+    <!-- boostrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- phosphor icons js -->
+    <script src="./assets/js/phosphor-icons.min.js"></script>
+    <!-- font awesome icon js-->
+    <script src="./assets/js/font-awesome-icon.js"></script>
+    <!-- flag icon js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/flag-icon-css@4.1.7/svgo.config.min.js"></script>
+    <!-- custom js -->
+    <script src="./scripts/custom.js"></script>
+</body>
+</html>

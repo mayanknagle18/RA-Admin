@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GolosTextMedium';
+    src: url('fonts/GolosTextMedium.eot');
+    src: url('fonts/GolosTextMedium.eot') format('embedded-opentype'),
+         url('fonts/GolosTextMedium.woff2') format('woff2'),
+         url('fonts/GolosTextMedium.woff') format('woff'),
+         url('fonts/GolosTextMedium.ttf') format('truetype'),
+         url('fonts/GolosTextMedium.svg#GolosTextMedium') format('svg');
+}

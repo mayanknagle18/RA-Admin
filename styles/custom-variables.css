@@ -1,0 +1,88 @@
+/* colors */
+:root{
+    /* white color */
+    --white-color: #ffffff;
+    --white-color-10: #f3f3f3;
+    --white-color-20: #8d8d8d;
+    /* black color */
+    --black-color: #000000;
+    /* other colors */
+    --primary-color: #4fc9da;
+    --primary-color-10: #51becc;
+    --primary-light-color: #4fc9da1a;
+    --secondary-color: #8B8476;
+    --secondary-light-color: #8b84761a;
+    --secondary-light-color-10: #8b847666;
+    --secondary-light-color-20: #8b847633;
+    --success-color: #aecc34;
+    --success-light-color: #aecc341a;
+    --gray-color: #48443d;
+    --gray-light-color: #48443d33;
+    --gray-light-color-10: #48443dbf;
+    --gray-light-color-20: #8b84764d;
+    --danger-color: #ff5e40;
+    --warning-color: #ebc33f;
+    --blue-color: #15264b;
+    --golos-regular: 'Golos_Regular';
+    --golos-medium: 'Golos_Medium';
+    --golos-semi-bold: 'Golos_SemiBold';
+    --golos-bold: 'Golos_Bold';
+    --golos-extra-bold: 'Golos_ExtraBold';
+    --golos-black: 'Golos_Black';
+}
+
+/* font face */
+
+@font-face {
+    font-family: 'Golos_Regular';
+    src: url('../assets/fonts/Golos/Golos-Regular/GolosTextRegular.eot');
+    src: url('../assets/fonts/Golos/Golos-Regular/GolosTextRegular.eot') format('embedded-opentype'),
+         url('../assets/fonts/Golos/Golos-Regular/GolosTextRegular.woff2') format('woff2'),
+         url('../assets/fonts/Golos/Golos-Regular/GolosTextRegular.woff') format('woff'),
+         url('../assets/fonts/Golos/Golos-Regular/GolosTextRegular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Golos_Medium';
+    src: url('../assets/fonts/Golos/Golos-Medium/GolosTextMedium.eot');
+    src: url('../assets/fonts/Golos/Golos-Medium/GolosTextMedium.eot') format('embedded-opentype'),
+         url('../assets/fonts/Golos/Golos-Medium/GolosTextMedium.woff2') format('woff2'),
+         url('../assets/fonts/Golos/Golos-Medium/GolosTextMedium.woff') format('woff'),
+         url('../assets/fonts/Golos/Golos-Medium/GolosTextMedium.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Golos_SemiBold';
+    src: url('../assets/fonts/Golos/Golos-SemiBold/GolosTextSemiBold.eot');
+    src: url('../assets/fonts/Golos/Golos-SemiBold/GolosTextSemiBold.eot') format('embedded-opentype'),
+         url('../assets/fonts/Golos/Golos-SemiBold/GolosTextSemiBold.woff2') format('woff2'),
+         url('../assets/fonts/Golos/Golos-SemiBold/GolosTextSemiBold.woff') format('woff'),
+         url('../assets/fonts/Golos/Golos-SemiBold/GolosTextSemiBold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Golos_Bold';
+    src: url('../assets/fonts/Golos/Golos-Bold/GolosTextBold.eot');
+    src: url('../assets/fonts/Golos/Golos-Bold/GolosTextBold.eot') format('embedded-opentype'),
+         url('../assets/fonts/Golos/Golos-Bold/GolosTextBold.woff2') format('woff2'),
+         url('../assets/fonts/Golos/Golos-Bold/GolosTextBold.woff') format('woff'),
+         url('../assets/fonts/Golos/Golos-Bold/GolosTextBold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Golos_ExtraBold';
+    src: url('../assets/fonts/Golos/Golos-ExtraBold/GolosTextExtraBold.eot');
+    src: url('../assets/fonts/Golos/Golos-ExtraBold/GolosTextExtraBold.eot') format('embedded-opentype'),
+         url('../assets/fonts/Golos/Golos-ExtraBold/GolosTextExtraBold.woff2') format('woff2'),
+         url('../assets/fonts/Golos/Golos-ExtraBold/GolosTextExtraBold.woff') format('woff'),
+         url('../assets/fonts/Golos/Golos-ExtraBold/GolosTextExtraBold.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Golos_Black';
+    src: url('../assets/fonts/Golos/Golos-Black/GolosTextBlack.eot');
+    src: url('../assets/fonts/Golos/Golos-Black/GolosTextBlack.eot') format('embedded-opentype'),
+         url('../assets/fonts/Golos/Golos-Black/GolosTextBlack.woff2') format('woff2'),
+         url('../assets/fonts/Golos/Golos-Black/GolosTextBlack.woff') format('woff'),
+         url('../assets/fonts/Golos/Golos-Black/GolosTextBlack.ttf') format('truetype'),
+}

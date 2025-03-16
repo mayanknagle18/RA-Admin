@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GolosTextBold';
+    src: url('fonts/GolosTextBold.eot');
+    src: url('fonts/GolosTextBold.eot') format('embedded-opentype'),
+         url('fonts/GolosTextBold.woff2') format('woff2'),
+         url('fonts/GolosTextBold.woff') format('woff'),
+         url('fonts/GolosTextBold.ttf') format('truetype'),
+         url('fonts/GolosTextBold.svg#GolosTextBold') format('svg');
+}

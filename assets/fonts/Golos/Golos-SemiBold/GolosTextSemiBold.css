@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GolosTextSemiBold';
+    src: url('fonts/GolosTextSemiBold.eot');
+    src: url('fonts/GolosTextSemiBold.eot') format('embedded-opentype'),
+         url('fonts/GolosTextSemiBold.woff2') format('woff2'),
+         url('fonts/GolosTextSemiBold.woff') format('woff'),
+         url('fonts/GolosTextSemiBold.ttf') format('truetype'),
+         url('fonts/GolosTextSemiBold.svg#GolosTextSemiBold') format('svg');
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GolosTextBlack';
+    src: url('fonts/GolosTextBlack.eot');
+    src: url('fonts/GolosTextBlack.eot') format('embedded-opentype'),
+         url('fonts/GolosTextBlack.woff2') format('woff2'),
+         url('fonts/GolosTextBlack.woff') format('woff'),
+         url('fonts/GolosTextBlack.ttf') format('truetype'),
+         url('fonts/GolosTextBlack.svg#GolosTextBlack') format('svg');
+}
