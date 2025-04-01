@@ -1,4 +1,12 @@
 /* header style */
+.ra_header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 .header_main_wrap {
     display: flex;
     align-items: center;
